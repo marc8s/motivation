@@ -15,6 +15,7 @@
         android:textSize="32sp"
         android:text="@string/vamoscomecar"/>
     <EditText
+        android:id="@+id/editName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -26,6 +27,7 @@
         android:gravity="center"
         android:hint="@string/qual_o_seu_nome"/>
     <Button
+        android:id="@+id/buttonSave"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
