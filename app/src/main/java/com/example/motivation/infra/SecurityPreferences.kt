@@ -10,8 +10,9 @@ class SecurityPreferences(context: Context){
     fun storeString(key: String, value: String){
         mSharedPreferences.edit().putString(key, value).apply()
     }
-    fun getString(key: String){
-
+    fun getString(key: String) : String{
+        //se não for nulo ?: se for nulo
+        return mSharedPreferences.getString(key, "") ?: ""
     }
 
 }

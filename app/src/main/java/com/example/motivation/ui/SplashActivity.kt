@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import com.example.motivation.R
+import com.example.motivation.infra.MotivationConstants
 import com.example.motivation.infra.SecurityPreferences
 import kotlinx.android.synthetic.main.activity_splash.*
 
@@ -38,7 +39,7 @@ class SplashActivity : AppCompatActivity(), View.OnClickListener {
     private fun handleSave(){
         val name = editName.text.toString()
         if(name!=""){
-            mSecurityPreferences.storeString("name",name)
+            mSecurityPreferences.storeString(MotivationConstants.KEY.PERSON_NAME,name)
             startActivity(Intent(this, MainActivity::class.java))
         }else{
             Toast.makeText(this, getString(R.string.informenome), Toast.LENGTH_SHORT).show()
