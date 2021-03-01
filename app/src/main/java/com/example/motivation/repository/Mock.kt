@@ -30,7 +30,7 @@ class Mock {
             (it.category == categoryId || categoryId == ALL)
         }
 
-        val rand = Random().nextInt(mListPhrases.size)
+        val rand = Random().nextInt(filtered.size)
         println("Rand é $rand ")
 
         return filtered[rand].description
