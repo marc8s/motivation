@@ -81,7 +81,7 @@
         android:layout_marginBottom="16dp"
         android:padding="16dp"
         android:textColor="@color/white"
-        android:background="@color/purple_500"
+        android:background="@drawable/ripple_button"
         />
 
 </RelativeLayout>
