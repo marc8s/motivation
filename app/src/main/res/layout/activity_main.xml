@@ -75,7 +75,7 @@
         android:id="@+id/buttonNewPhrase"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Nova frase"
+        android:text="@string/nova_frase"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="16dp"
